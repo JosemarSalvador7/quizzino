@@ -1,5 +1,5 @@
 # Sincronizar_dependências
-ync
+uv run sync
 # Compilar com Nuitka
 
 uv run python -m nuitka --onefile --follow-imports --enable-plugin=tk-inter --include-data-dir=./Quizzino=Quizzino --output-dir=dist main.py
