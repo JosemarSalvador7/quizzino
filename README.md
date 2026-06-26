@@ -1,76 +1,102 @@
 # 🧠 Quizino
 
-Aplicação desktop de perguntas e respostas desenvolvida em **Python + CustomTkinter**, criada para tornar o processo de aprendizagem mais interativo através de quizzes dinâmicos, sistema de níveis e interface moderna.
+<p align="center">
+Aplicação Desktop de Quiz desenvolvida com Python para aprendizagem interativa.
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python">
+<img src="https://img.shields.io/badge/UI-CustomTkinter-1F6AA5">
+<img src="https://img.shields.io/badge/License-GPL-blue">
+<img src="https://img.shields.io/badge/Status-Active-success">
+</p>
 
 ---
 
-## 📌 Sobre
+## Sobre
 
-O **Quizino** é um projeto educativo que combina programação orientada a objetos, programação funcional e interfaces gráficas modernas para criar uma experiência simples, rápida e divertida.
+O **Quizino** é uma aplicação desktop criada para proporcionar uma experiência de aprendizagem através de perguntas e respostas.
 
-As perguntas são carregadas a partir de um ficheiro **Excel**, permitindo adicionar novos conteúdos sem alterar o código.
-
----
-
-## ✨ Funcionalidades
-
-- Sistema de níveis:
-  - Fácil
-  - Médio
-  - Difícil
-- Perguntas aleatórias
-- Pontuação baseada na dificuldade
-- Feedback visual de respostas
-- Reinício rápido do jogo
-- Interface gráfica moderna
-- Compatibilidade com Linux
+Desenvolvido em **Python + CustomTkinter**, o projeto utiliza perguntas carregadas dinamicamente e um sistema de níveis para tornar cada sessão diferente.
 
 ---
 
-## 🛠 Tecnologias
+## Funcionalidades
 
-- Python
-- CustomTkinter
-- OpenPyXL
-- Pillow
-- Type Hints
+* Sistema de níveis (Fácil, Médio e Difícil)
+* Perguntas aleatórias
+* Pontuação dinâmica
+* Interface moderna
+* Feedback visual de respostas
+* Reinício rápido do jogo
+* Compatibilidade multiplataforma
 
 ---
 
-## 🚀 Instalação
+## Sistema de Níveis
+
+| Nível   | Questões | Pontos |
+| ------- | -------: | -----: |
+| Fácil   |        5 |     +1 |
+| Médio   |        7 |     +2 |
+| Difícil |       10 |     +3 |
+
+---
+
+## Tecnologias
+
+* Python
+* CustomTkinter
+* OpenPyXL
+* Pillow
+* Type Hints
+* Programação Orientada a Objetos
+* Programação Funcional
+
+---
+
+## Estrutura do Projeto
+
+```text
+quizzino/
+│
+├── Quizzino/
+├── bases/
+├── LICENSE
+├── README.md
+├── main.py
+├── pyproject.toml
+└── uv.lock
+```
+
+---
+
+## Instalação
 
 ### Clonar repositório
 
 ```bash
-git clone https://github.com/seu-utilizador/quizino.git
-cd quizino
-```
-
-### Criar ambiente virtual
-
-```bash
-python -m venv .venv
-```
-
-Linux/macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-Windows:
-
-```bash
-.venv\Scripts\activate
+git clone https://github.com/JosemarSalvador7/quizzino.git
+cd quizzino
 ```
 
 ### Instalar dependências
 
+Com UV:
+
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
-### Executar
+ou
+
+```bash
+pip install .
+```
+
+---
+
+## Executar
 
 ```bash
 python main.py
@@ -78,39 +104,42 @@ python main.py
 
 ---
 
-## 📂 Estrutura
+## Banco de Perguntas
 
-```text
-Quizino/
-├── main.py
-├── questions.xlsx
-├── logo.png
-├── README.md
-└── Quizzino/
-```
+As perguntas são carregadas através de ficheiros externos.
+
+Exemplo:
+
+| Pergunta          | Opção 1 | Opção 2  | Opção 3 | Opção 4 | Resposta |
+| ----------------- | ------- | -------- | ------- | ------- | -------- |
+| Capital de Angola | Luanda  | Benguela | Huambo  | Cabinda | 1        |
+
+> A coluna **Resposta** representa o índice da opção correta.
 
 ---
 
-## 📚 Licença — GNU GPL
+## Objetivos
+
+* Praticar desenvolvimento desktop
+* Aplicar arquitetura e organização de código
+* Explorar interfaces gráficas modernas
+* Construir um projeto educativo open source
+
+---
+
+## Licença
 
 Este projeto está licenciado sob a **GNU General Public License (GPL)**.
 
-Isto significa que:
+Pode utilizar, modificar e redistribuir este software, desde que versões derivadas mantenham a mesma licença e disponibilizem o código-fonte.
 
-- Pode utilizar o software livremente;
-- Pode estudar e modificar o código;
-- Pode redistribuir cópias;
-- Pode distribuir versões modificadas;
-
-**Condição importante:** qualquer versão derivada deve manter a mesma licença GPL e disponibilizar o código-fonte.
-
-Consulte o ficheiro `LICENSE` para mais detalhes.
+Consulte o ficheiro **LICENSE** para mais informações.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
-**João Salvador Paulo**  
+**João Salvador Paulo**
 Desenvolvedor de Software • Full Stack em formação
 
-Construindo projetos para aprender, evoluir e partilhar conhecimento.
+Construindo projetos para aprender e evoluir continuamente.
